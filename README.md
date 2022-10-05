@@ -46,7 +46,7 @@ The results will be validated with k-fold cross validation, using accuracy. At t
 
 I chose k=5 based off testing various values of K on the validation data as shown below.
 
-![KNN](/Users/felixambrose/Downloads/KNN.png)
+![KNN]((https://user-images.githubusercontent.com/95233010/194070490-80debf7a-d5d7-42cc-a3d6-97e0bcf20958.png))
 
 Test Accuracy: 75%
 
