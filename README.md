@@ -13,7 +13,7 @@ Below is the machine learning pipeline:
 1.   Data Input
 2.   Transformation: Feature extraction and z-score normalisation
 4.   Transformation: Feature Selection using a covariance matrix and an F test ('SelectKBest')
-3.   Modelling using Logistic Regression and KNN and then tuning hyperparameters with 5-fold cross validation.
+3.   Modelling using Logistic Regression and KNN and then tuning hyperparameters with K-fold cross validation.
 4.   Testing on unseen data using the candidate models.
 
 # Transformation Stage
@@ -39,18 +39,18 @@ I realised that detecting a song would be less focused on certain metrics (say p
 
 After this I would go on to select three metrics by studying scatterplots, the covariance matrix and using an F test and the 'SelectKBest' Sklearn function to identify the 4 features to use in the model.
 
-# 5 Modelling
-
-I will experiment with two models: 
-
-
-1.   Logistic Regression
-2.   KNN
-
-
 
 # Methodology
 
-The results will be validated with k-fold cross validation (at k=5), using accuracy. At this stage I will be tuning hyperparameters. After this, I will test each model (with the optimum hyperparameters) on an unseen test dataset.
+The results will be validated with k-fold cross validation, using accuracy. At this stage I will be tuning hyperparameters. After this, I will test each model (with the optimum hyperparameters) on an unseen test dataset.
+
+I chose k=5 based off testing various values of K on the validation data as shown below.
+
+![KNN](/Users/felixambrose/Downloads/KNN.png)
+
+Test Accuracy: 75%
+
+
+
 
 
